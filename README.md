@@ -6,17 +6,26 @@ I will keep this repo to track my progress to the coding interview preparation. 
 ### First 30 days plan
 This is the primary plan for next 30 days
 
-Day 1 - Day 7: Java Basics and a problem each day
-Day 8 - Day 30: DS & Algo practice with 5 problems each category
+Day 1 - Day 17: Java Basics and a problem each day
 
 ### Detail Plan
-- Day 1 - Java Basics, Flow Control, Input/Output, Operators, Strings, Arrays
-- Day 2 - OOP - basics, Inheritence, Abstraction, Polymorphism, Encapsulation
-- Day 3 - Constructor, Interface, Methods, Wrapper Class
-- Day 4 - Keywords, Access Modifiers, Memory Allocation, Classes, Packages
-- Day 5 - Collection, List, Queue, Map, Set
-- Day 6 - Exception Handling, Multi-Threding, Syncronization,F ile Handling, Regex, IO, Networking
-- Day 7 - New Features, Interview Questions
+- Day 1 - Java Basics,
+- Day 2 - Input/Output, Flow Control
+- Day 3 - Operators, String
+- Day 4 - Arrays
+- Day 5 - OOPs
+- Day 6 - Inheritance, Abstraction, Encapsulation
+- Day 7 - Polymorphism, Constructors, methods
+- Day 8 - Interface, Wrapper class, keywords
+- Day 9 - Access Modifiers, Memory allocation
+- Day 10 - Classes, packages
+- Day 11 - Collection, List
+- Day 12 - Queue, Map, Set
+- Day 13 - Exception Handling, Multi-Threding, Syncronization
+- Day 14 - File Handling, Regex, IO, Networking
+- Day 15 - SE 8, Date & Time, JDBC, Miscellaneous
+- Day 16 - Interview Questions
+- Day 17 - Certification on Linkedin
 
 
 ### Day 1:
