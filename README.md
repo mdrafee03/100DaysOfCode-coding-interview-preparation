@@ -29,5 +29,5 @@ Day 1 - Day 17: Java Basics and a problem each day
 
 
 ### Day 1:
-- Solve a problem
-- Java Introduction
+- Studied on JVM, JRE, JDK, JIT, Garbage Collector, byte code, machine code, different datatypes and variables and their accessibility and scope
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/134-gas-station
