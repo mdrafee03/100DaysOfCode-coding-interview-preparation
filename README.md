@@ -32,3 +32,7 @@ Day 1 - Day 18: Java Basics and a problem each day
 ### Day 1:
 - Studied on JVM, JRE, JDK, JIT, Garbage Collector, byte code, machine code, different datatypes and variables and their accessibility and scope
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/134-gas-station
+
+### Day 2:
+- Studied on Input and output
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/5-longest-palindromic-substring
