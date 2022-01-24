@@ -36,3 +36,7 @@ Day 1 - Day 18: Java Basics and a problem each day
 ### Day 2:
 - Studied on Input and output
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/5-longest-palindromic-substring
+
+### Day 3:
+- Studied on flow control
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/1291-sequential-digits
