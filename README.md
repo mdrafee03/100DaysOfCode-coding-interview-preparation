@@ -41,3 +41,7 @@ Day 1 - Day 19: Java Basics and a problem each day
 ### Day 3:
 - Studied on flow control
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/1291-sequential-digits
+
+### Day 4:
+- Studied on operator
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/941-valid-mountain-array
