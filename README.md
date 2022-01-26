@@ -45,3 +45,7 @@ Day 1 - Day 19: Java Basics and a problem each day
 ### Day 4:
 - Studied on operator
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/941-valid-mountain-array
+
+### Day 5:
+- Studied on Strings
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/8-string-to-integer-atoi
