@@ -49,3 +49,7 @@ Day 1 - Day 19: Java Basics and a problem each day
 ### Day 5:
 - Studied on Strings
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/8-string-to-integer-atoi
+
+### Day 6
+- Studied on Arrays
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/421-maximum-xor-of-two-numbers-in-an-array
