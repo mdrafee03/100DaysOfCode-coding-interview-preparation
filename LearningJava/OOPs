@@ -1,0 +1,76 @@
+### OOP
+Object oriented programing is a method used for designing a program using classes and objects.
+
+### Methods
+Methods consists of six components
+
+- Access modifiers: defines access type of the method from where it can be accessed. There are 4 type of access specifiers namely public, protected, private, default.
+- Return type: data type of the value returned from the method or void if no return a value
+- Method name: name of the method
+- Parameter list: comma separated list of the input parameters (consists of data type and name)
+- Exception list: exceptions you expect by the method can throw
+- Method body: the code need to be executed by the method
+
+### Class
+A class is user defined blueprint/prototype from which objects can be created. It consists of the properties or methods that are common to all objects. Class declaration consists of
+- Modifiers: A class can have public or default acceess modifiers, not private or protected
+- Class name: name of the class
+- Superclass(optional): The class can have parent class which is called superclass. It is used with extends keyword. A class can only extends one parent.
+- Interfaces(optional): A comma separated list of interfaces implemented by the class, proceded by the implements interface
+- Body: properties and methods exist within the scope of the class
+
+### Object
+Object is the member of a class. A object consists of the following
+- identity: Identity is a characteristics used to uniquely identify the object with a unique id, it is not visible to the external user. It is used internally by the JVM to identify each object uniquely
+- State: represents the data/attribute of an object using properties
+- Behavior: represents the behavior (functionality) of an object using methods
+
+Notes:
+- Object can't be created from abstract classes
+- When object is created, the class is said to be instantiated
+- All the instances of the class share the states and behavior
+
+### Intializing an object
+new operator instantiates a class by allocating memory to it and returning the reference to that memory. It also invokes the class constructor. Class constructors are recognized as it will have same name as class name. All classes hae at least one constructor. If a class doesn't explicitly declare any, Java automatically provides no argument constructor called default constructor
+
+### Anonymous objects
+Objects are instantiated but not stored in a variable is called anonymous object.
+
+Features:
+- used for immediate method calling
+- destroyed after method calling
+
+### Naming convension
+- class name should be noun in Pascalcase
+- Interface should be adjective like Runnable, Serializable etc. in Pascalcase
+- Methods should be verb camelcase
+- Constants should be all uppercase and words separated by unerscore
+
+
+### Four Pillars of OOPs
+- Abstraction: process of hiding implementation details and expose only the necessary details. Abstraction is achieved by interfaces and abstract
+- Encapsulation: wrapping up of data and code as a signle unit. In encapsulation, the variables will be hidden from other classes and can be accessed only through the methods of their current class.
+- Inheritence: It's a mechanism by which one class is allowed to inherit feature from another class
+  - SupperClass: the class the feature are inherited
+  - Subclass: The class that inherits from other class
+- Polymorphism: It is the ability of an object to take sam action in many ways. Polymorphism is performed by two ways namely Overloading and Overriding
+
+### Why Java not a Pure OOP language
+There are 7 qualities to be satisfied for a language to be pure object oriented. They are
+1. Encapsulation
+2. Inheritance
+3. Abstraction
+4. Polymorphism
+5. All predefined types are objects
+6. All object defined types are objects
+7. All operations performed on objects must be only through methods exposed at the objects
+
+Java supports all except 5 and 7. The reasons are given below
+
+Primitives data type: Java supports primitive data types like int, float, String etc which violates 5th condition that all predefined types are objects.
+
+Static keyword: Static classes can be used without the use of an object which violates 7th condition that all  operations will be performed through object exposed methods
+
+Wrapper class: In wrapper classes, the operation can be performed without objects. example: String s1 = "ABC" + "D"
+
+
