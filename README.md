@@ -53,3 +53,7 @@ Day 1 - Day 19: Java Basics and a problem each day
 ### Day 6
 - Studied on Arrays
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/421-maximum-xor-of-two-numbers-in-an-array
+
+### Day 7
+- Studied on OOPs
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/84-largest-rectangle-in-histogram
