@@ -46,14 +46,34 @@ Features:
 - Methods should be verb camelcase
 - Constants should be all uppercase and words separated by unerscore
 
-
 ### Four Pillars of OOPs
 - Abstraction: process of hiding implementation details and expose only the necessary details. Abstraction is achieved by interfaces and abstract
 - Encapsulation: wrapping up of data and code as a signle unit. In encapsulation, the variables will be hidden from other classes and can be accessed only through the methods of their current class.
-- Inheritence: It's a mechanism by which one class is allowed to inherit feature from another class
+- Inheritence: 
   - SupperClass: the class the feature are inherited
   - Subclass: The class that inherits from other class
-- Polymorphism: It is the ability of an object to take sam action in many ways. Polymorphism is performed by two ways namely Overloading and Overriding
+- Polymorphism: It is the ability of an object to take same action in many ways. Polymorphism is performed by two ways namely Overloading and Overriding
+
+#### Inheritance
+It's a mechanism by which one class is allowed to inherit feature from another class. The class whose feates are inherited is known as superclass or base class or parent class. The class inherits from superclass is known as subclass or derived class or extended class or child class. It is used with the keyword extends
+
+Types of inheritance
+- Single Inheritance: subclasses inherits from one superclass
+- Multtilevel Inheritance: a subclass inherits from one superclass which in turns used a superclass for other classes. Example class A serves as a superclass for class B and again class B serves as a superclass for class C. 
+- Hierarchical Inheritance: a subclass serves as a superclass for multiple subclasses. Example: Animal class serves as a superclass for Dog class and Cow class
+- Multiple Inheritance: one class can have multiple superclass but java doesn't support multiple inheritance with classes. It can be achieved through interfaces
+- Hybrid Inheritance: It is a mix of two or more of the above types of inheritance. As java doens't support multiple inheritance,hybrid inheritance is not supported with classes. It can be achieved through interfaces
+
+Characteristics
+- Except object class, every class has single inheritance. In the absence of explicit superclass, Object is the superclass implicitly.
+- A superclass can have any number of subclasses but a subclass can have only one superclass
+- A subclass inherits all the members. As constructors are not the member, they are not inherited but constructors of the superclass can be invoked from subclass by super keyword
+- Private members can't be inherited
+- Inherited members can be accessed directly just like other members
+- New members can be declared in subclass which aren't in the superclass
+- Super class methods can be overrided by the keyword @override
+- 
+
 
 ### Why Java not a Pure OOP language
 There are 7 qualities to be satisfied for a language to be pure object oriented. They are
@@ -73,4 +93,31 @@ Static keyword: Static classes can be used without the use of an object which vi
 
 Wrapper class: In wrapper classes, the operation can be performed without objects. example: String s1 = "ABC" + "D"
 
+### Access Modifiers
+There are four types of access modifiers
 
+**Default**: when no access modifiers is specified for a class, method or data member it is called default access modifiers. It is only accessible by the same package
+
+**Private**: The private access modifiers are is specified by the keyword private. The methods or data members declared as private are accessible within the class. Classes or interfaces can't be declared as private
+
+**Protected**: The protected access modifiers are specified by the keyword protected. The methods or data members declared as protected are accessible within the same package or the subclasses in different packages. Classes or interfacescan't be declared as protected
+
+**Public**: the public access modifier is specified by the keyword public. Classes, methods or data members declared as pbulic are accessible from everywhere in the program.
+
+N.B: 
+- try to use most restrictive access level that makes sense for a particular member
+- avoid public fields excepts for constants
+
+### Constructor
+Constructors are used to initialize variables. The characteristics are
+- Constructors must have the same name as the class which is resides
+- Constructors don't return any type
+- Constructors are called only once at the time of object creation
+- Constructors can't be abstract, final, static or synchronized
+- Access modifiers canbe used in the constructor
+
+There are two types of constructor
+- No-argument constructor: has no parameter known as default constructor, if it is not declared, compiler creates default
+- Parameterized Constructor: constructors that has parameters known as parameterized constructor
+
+Constructors can be overloaded i.e it may have multiple constructors to create object in different ways. Compiler differentiates the constructors based on number of parameters, type of the parameters, and order of the parameters
