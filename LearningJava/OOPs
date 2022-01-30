@@ -47,7 +47,6 @@ Features:
 - Constants should be all uppercase and words separated by unerscore
 
 ### Four Pillars of OOPs
-- Abstraction: process of hiding implementation details and expose only the necessary details. Abstraction is achieved by interfaces and abstract
 - Encapsulation: wrapping up of data and code as a signle unit. In encapsulation, the variables will be hidden from other classes and can be accessed only through the methods of their current class.
 - Inheritence: 
   - SupperClass: the class the feature are inherited
@@ -72,7 +71,42 @@ Characteristics
 - Inherited members can be accessed directly just like other members
 - New members can be declared in subclass which aren't in the superclass
 - Super class methods can be overrided by the keyword @override
-- 
+
+#### Abstraction
+Abstraction is the process of hiding implementation details and expose only the necessary details to the user. It is also a process of identifying the essentation characteristics of an object ignoring irrelevant details. Abstraction is achieved by interfaces and abstract
+
+Abstract classes characteristics
+- abstract class is declared with the non-access modifier abstract
+- only methods and classes is application for abstract, but not variables
+- An abstract method is a method that is declared without implementation
+- An abstract class may have either/both concrete method and abstract method
+- An abstract method must be redefined in the subclass with overriding
+- Any class contains abstract methods must be declared with abstract keyword
+- An abstract class can't be directly instantiated with new operator
+- An abstract class can have no abstract method which allow to create classes that can't be instantiated but can only be inherited
+- An abstract class can have static method that can be called independently without an object
+
+Encapsulation vs Abstraction: 
+- Encapsulation is data hiding where abstration is implementation detail hiding
+- While encapsulation grouped together data and methods that acts upon the data where abstraction deal with exposing the interface to the user and hiding the details of the implementation
+
+Abstract vs final:
+Final is used to prevent inheritance whereas abstract classes depend on their child to complete the implementation. In case of methods, final is used to prevent overriding whereas abstract methods need to be overridden in sub-classes.
+
+Abstract class vs Interface:
+- Abstract class may have abstract and non-abstract methods but interface can have only abstract methods, default and static methods
+- Abstract can have final, non-final, static, non-static variables where interface can have only static and final variables
+- Abstract class can provide implementation of the interface where interface can't provide implementation of an abstract class
+- Interface can extend only another interface where abstract class can extend both another class and implements multiple interfaces
+- Members of the interface are public by default where abstract class members can be any access modifiers
+- It application requires common methods or fields or access modifiers other than public, go for abstract class
+- It a class need multiple inheritance, go with interface with implements keyword
+- It it completely spcification of the behavior of a data but no concern about reuse or implementation go with interface
+
+Advantages of Abstraction
+1. It reduces the complexity of viewing the things
+2. Avoids code duplication and increases reusability
+3. Helps to increase the security of an application as only important details are provided
 
 
 ### Why Java not a Pure OOP language
