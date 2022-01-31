@@ -61,3 +61,7 @@ Day 1 - Day 19: Java Basics and a problem each day
 ### Day 8
 - Studied on OOps and inheritance
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/189-rotate-array
+
+### Day 9
+- Studied on the OOP and abstraction
+- Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/1672-richest-customer-wealth
