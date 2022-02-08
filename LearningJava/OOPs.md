@@ -31,7 +31,7 @@ Notes:
 - All the instances of the class share the states and behavior
 
 ### Intializing an object
-new operator instantiates a class by allocating memory to it and returning the reference to that memory. It also invokes the class constructor. Class constructors are recognized as it will have same name as class name. All classes hae at least one constructor. If a class doesn't explicitly declare any, Java automatically provides no argument constructor called default constructor
+new operator instantiates a class by allocating memory to it and returning the reference to that memory. It also invokes the class constructor. Class constructors are recognized as it will have same name as class name. All classes have at least one constructor. If a class doesn't explicitly declare any, Java automatically provides no argument constructor called default constructor
 
 ### Anonymous objects
 Objects are instantiated but not stored in a variable is called anonymous object.
@@ -47,12 +47,6 @@ Features:
 - Constants should be all uppercase and words separated by unerscore
 
 ### Four Pillars of OOPs
-- Encapsulation: wrapping up of data and code as a signle unit. In encapsulation, the variables will be hidden from other classes and can be accessed only through the methods of their current class.
-- Inheritence: 
-  - SupperClass: the class the feature are inherited
-  - Subclass: The class that inherits from other class
-- Polymorphism: It is the ability of an object to take same action in many ways. Polymorphism is performed by two ways namely Overloading and Overriding
-
 #### Inheritance
 It's a mechanism by which one class is allowed to inherit feature from another class. The class whose feates are inherited is known as superclass or base class or parent class. The class inherits from superclass is known as subclass or derived class or extended class or child class. It is used with the keyword extends
 
@@ -86,10 +80,6 @@ Abstract classes characteristics
 - An abstract class can have no abstract method which allow to create classes that can't be instantiated but can only be inherited
 - An abstract class can have static method that can be called independently without an object
 
-Encapsulation vs Abstraction: 
-- Encapsulation is data hiding where abstration is implementation detail hiding
-- While encapsulation grouped together data and methods that acts upon the data where abstraction deal with exposing the interface to the user and hiding the details of the implementation
-
 Abstract vs final:
 Final is used to prevent inheritance whereas abstract classes depend on their child to complete the implementation. In case of methods, final is used to prevent overriding whereas abstract methods need to be overridden in sub-classes.
 
@@ -107,6 +97,27 @@ Advantages of Abstraction
 1. It reduces the complexity of viewing the things
 2. Avoids code duplication and increases reusability
 3. Helps to increase the security of an application as only important details are provided
+
+#### Encapsulation
+wrapping up of data and code as a signle unit. In encapsulation, the variables will be hidden from other classes and can be accessed only through the methods of their current class
+
+Advantages of Encapsulation:
+- Data Hiding: the implementation and data storing process is hidden from the user
+- Reusability: Easy to change with new requirements
+- Testing: easy to test for unit testing
+
+Encapsulation vs Abstraction: 
+- Abstration is a process to gain the info while encapsulation is the process to contain the info
+- Abstration is the method of hiding the unwanted info while encapsulation is method to hide the data in a single unit to protect the info from outside
+- Abstration is implemeted using abstract class and interface while encapsulation can be implemented by access modifier
+- the objects that help to perform abstraction are encapsulated but objects the results encapsulation need not be abstracted
+
+#### Polymorphism
+It is the ability of an object to take same action in many ways. Polymorphism is two types namely compile-time polymorphism and runtime polymorsphism. Compile-time polymorshism is achieved by method overloading. Runtime polymorphism is achieved by method overriding. Polymorphism allows the object to decide which form of the method to implement at compile-time or runtime.
+
+**Method Overloading**: Multiple methods with same name but different parameters are called method overloading. Method can be overloaded by change in argument type, number of arguments.
+
+**Method Overriding**: When derived class has implemented one of the member function of it's base class, the base class member function is said to be overridden. Overriden function is resolved at runtime.
 
 
 ### Why Java not a Pure OOP language
@@ -139,8 +150,8 @@ There are four types of access modifiers
 **Public**: the public access modifier is specified by the keyword public. Classes, methods or data members declared as pbulic are accessible from everywhere in the program.
 
 N.B: 
-- try to use most restrictive access level that makes sense for a particular member
-- avoid public fields excepts for constants
+- Try to use most restrictive access level that makes sense for a particular member
+- Avoid public fields excepts for constants
 
 ### Constructor
 Constructors are used to initialize variables. The characteristics are
@@ -155,3 +166,11 @@ There are two types of constructor
 - Parameterized Constructor: constructors that has parameters known as parameterized constructor
 
 Constructors can be overloaded i.e it may have multiple constructors to create object in different ways. Compiler differentiates the constructors based on number of parameters, type of the parameters, and order of the parameters
+
+**Copy Constructor**: A copy constructor is a constructor that creates an object using another object of the same class. It is used to deep copy of existing object. It is useful when the class has several fields and we want a deep copy of it.
+
+Copy Constructor vs Clone
+- Copy Constructor is easier to implement, no need to implement cloneable interface and handle CloneNotSupportedException
+- Copy constructor can assign value to a final field while clone method cannot
+- Clone object returns object reference, which needs to typecast to the appropriate type
+
