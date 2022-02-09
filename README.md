@@ -65,3 +65,7 @@ Day 1 - Day 19: Java Basics and a problem each day
 ### Day 9
 - Studied on the OOP and abstraction
 - Solve problem: See https://github.com/mdrafee03/Leetcode/tree/main/1672-richest-customer-wealth
+
+### Day 10
+- Studied on Encapsulation, Polymorphism and Constructors
+- Solve Problem: See https://github.com/mdrafee03/Leetcode/tree/main/258-add-digits
