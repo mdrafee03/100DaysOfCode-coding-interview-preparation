@@ -160,6 +160,8 @@ Constructors are used to initialize variables. The characteristics are
 - Constructors are called only once at the time of object creation
 - Constructors can't be abstract, final, static or synchronized
 - Access modifiers canbe used in the constructor
+- recursive constructor calling is invalid
+- this() is used to call current class default constructor, super is used to call parent constructor
 
 There are two types of constructor
 - No-argument constructor: has no parameter known as default constructor, if it is not declared, compiler creates default
@@ -174,3 +176,10 @@ Copy Constructor vs Clone
 - Copy constructor can assign value to a final field while clone method cannot
 - Clone object returns object reference, which needs to typecast to the appropriate type
 
+**Constructor Chaining**: It is a process of peforming operations combining multiple constructor. One constructor call another, then that constructor call another.
+
+**Private Constructor**: Private constructor is used for two major reasons
+- Internal Constructor chaining
+- Singleton class design Pattern
+
+Singleton class: Only one object can be created from the class is called singleton class. We can't have more than one object of that class
