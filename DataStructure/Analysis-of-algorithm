@@ -1,0 +1,44 @@
+### What is Rate of Growth
+The rate at which the running time increases as a function of input is called rate of growth
+
+### Rate of growth sequence
+1 -> logn -> n -> nlogn -> n^2 -> n^3 -> 2^n
+
+### Types of analysis
+- Best case: fastest time to complete indicated by Omega Q notation (Ω)
+- Worst case: slowest time to complete indicated by big O notation (O)
+- Average case: average time to complete indicated by theta notation (Θ)
+
+### Big O notation
+It gives a tight upper bound of a given function. Generally it is represented as f(n) = O(g(n)). For a larger values of n, the upper bound of f(n) is g(n). For example, if f(n) = n^4+n^2+8 is the given algorithm, n^4 is g(n).That means g(n) gives the maximum rate of growth for f(n) at larger values of n.
+
+O–notation defined as O(g(n)) = {f(n): there exist positive constants c and n0 such that 0 ≤ f(n) ≤ cg(n) for all n > n0}. g(n) is an asymptotic tight upper bound for f(n). Our objective is to give the smallest rate of growth g(n) which is greater than or equal to the given algorithms’ rate of growth /(n).
+
+Example-1: Find upper bound for f(n) = 3n + 8
+Solution: 0 < 3n + 8 < 4n for all values when n >= 8, so, f(n) = O(n) where c=4 and n0=8
+
+Example-2 Find upper bound for f(n) = n^2 + 1
+Solution: 0 < n^2 + 1 < 2n^2 where n0 > 1, f(n) = O(n^2) where c=2 and n0=1
+
+### Omega Q notation
+It gives the tighter lower bound of the given algorithm and we represent it as f(n) = Ω(g(n)). That means for larger values of n, the tighter lower bound of f(n) is g(n).  For example, if f(n) = 100n^2 + 10n + 50, g(n) is Ω(n^2).
+
+The Ω notation can be defined as Ω(g(n)) = {f(n): there exist positive constants c and n0 such that 0 ≤ cg(n) ≤ f(n) for all n ≥ n0}. g(n) is an asymptotic tight lower bound for f(n). Our objective is to give the largest rate of growth g(n) which is less than or equal to the given algorithm’s rate of growth f(n).
+
+Example: Find lower bound for f(n) = 5n^2
+Solution: 0 <= cn^2 <= 5n^2 for c = 5 and n0 = 1
+
+
+### Theta notation
+This notation decides whether the upper and lower bounds of a given function (algorithm) are the same. The average running time of an algorithm is always between the lower bound and the upper bound. If the upper bound (O) and lower bound (Ω) give the same result, then the Θ notation will also have the same rate of growth.
+
+It is defined as Θ(g(n)) = {f(n): there exist positive constants c1, c2 and n0 such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ n0}. g(n) is an asymptotic tight bound for f(n)
+
+Example: What's the Θ bound for f(n) = n^2/2-n/2
+Solution: 0 < c1*n^2 <= n^2/2-n/2 <= c2*n^2 where c1 = 1/5, c2=2, n0=2
+    if n=1, c1 can't be positive, so n != 1
+    if n=2, f(n) = 1 and g(n) = 4, so, with c1= 1/5 & c2=1, the condition satisfied
+
+
+
+
