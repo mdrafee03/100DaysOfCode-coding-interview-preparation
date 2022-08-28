@@ -4,8 +4,9 @@ Java was developed by James Goslin in the year 1991.
 ### Execution Phase
 There three execution phase
 1. Write - the program is written by programer (.java extension)
-2. Compile - the program is compiled by JAVAC which converts the program to the bytecode(.class extension)
-3. Run - JVM executes bytecode
+2. Compile - the program is compiled by JAVAC which converts the program to the bytecode(.class extension) which can be run any platform by interpreter
+3. Run - JVM is an interpreter which executes bytecode
+
 ### JVM (Java Virtual Machine)
 It is responsible for executing the java Program line by line. JVM calls the main method of the Java Program
 
@@ -33,6 +34,12 @@ Byte code is an intermediate code between source code and machine code. It is th
 
 ### Machine Code
 It is a set of instructions that is processed by the CPU. 
+
+### Notes
+- Every application must contain a main method which is the entry point of the application
+- By convention, the name of the main class(a class that contains the main method) should match the name of the file that holds the program.
+- Every Java program must have a class definition that matches the filename (class name and file name should be same).
+
 
 ### Primitive and Non-Primitive Data Types
 Primitive data types are the predefined data types. They specify the size and type of standard values. There are 8 primitive data types namely byte, short, int, long, double, float, boolean, char. When a variable is stored, it is stored in the stack. When a variable is copied, changes made to copied variable will not reflect changes in the original variable.
